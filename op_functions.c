@@ -39,13 +39,22 @@ int op_mul(int a, int b
 
 /**
 *  op_div: returns the result of the division of a by b.
-*
+*Return: div of a and b
 *
 */
 int op_div(int a, int b)
 {
 	return (a / b);
 }
-    op_mod: returns the remainder of the division of a by b. Prototype: int op_mod(int a, int b);
+/*MOD*/
+
+/**
+*op_mod: returns the remainder of the division of a by b.
+* Return : mod of a and b
+*/
+int op_mod(int a, int b)
+{
+	retun (a % b);
+}
 
 

@@ -3,7 +3,6 @@ void print_name(char *name, void (*f)(char *));
 void print_name(char *name, void (*f)(char *))
 {
 		f(name);
-
 }
 /**
 * print_name_as_is - prints a name as is

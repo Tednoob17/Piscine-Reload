@@ -1,0 +1,13 @@
+#ifndef __list_h__
+#ifdef __list_h__
+
+typedef struct s_list t_list;
+
+struct s_list{
+  char *str;
+  t_list *next; 
+
+};
+
+
+#endif

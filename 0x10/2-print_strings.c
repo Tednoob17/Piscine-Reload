@@ -12,16 +12,16 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list arg;
 
 	va_start(arg, n);
-	while(i < n)
+	while (i < n)
 	{
 		if (i == 0)
-			printf("%s",va_arg(arg, char *));
+			printf("%s", va_arg(arg, char *));
 		else
 		{
-			printf("%s",separator);
-			printf("%s",va_arg(arg, char *));
+			printf("%s", separator);
+			printf("%s", va_arg(arg, char *));
 		}
-		i++;
+			i++;
 	}
 	va_end(arg);
 	printf("\n");
@@ -33,6 +33,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
  */
 int main(void)
 {
-    print_strings(", ", 2, "Jay", "Django");
-    return (0);
+	print_strings(", ", 2, "Jay", "Django");
+	return (0);
 }

@@ -12,10 +12,10 @@ int sum_them_all(const unsigned int n, ...)
 
 	if (n == 0)
 		return (0);
-	va_start(arg,n);
-	while(i < n)
+	va_start(arg, n);
+	while (i < n)
 	{
-		sum +=va_arg(arg, int);
+		sum += va_arg(arg, int);
 		i++;
 	}
 			va_end(arg);
@@ -29,11 +29,11 @@ int sum_them_all(const unsigned int n, ...)
  */
 int main(void)
 {
-    int sum;
+	int sum;
 
-    sum = sum_them_all(2, 98, 1024);
-    printf("%d\n", sum);
-    sum = sum_them_all(4, 98, 1024, 402, -1024);
-    printf("%d\n", sum);
-    return (0);
+	sum = sum_them_all(2, 98, 1024);
+	printf("%d\n", sum);
+	sum = sum_them_all(4, 98, 1024, 402, -1024);
+	printf("%d\n", sum);
+	return (0);
 }

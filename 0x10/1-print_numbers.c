@@ -7,9 +7,18 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
+	unsigned int i = 0;
+	va_list arg;
 
+	va_start(arg, n);
+	while (i < n)
+	{
+		printf("%s",separator);
+		printf("%d",va_arg(arg, int));
+		i++;
+	}
 
-
+	va_end(arg);
 }
 
 /**

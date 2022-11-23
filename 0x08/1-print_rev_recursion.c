@@ -1,6 +1,13 @@
 #include "holberton.h"
 
 /**
+ *_print_rev_recursion - print  string a reverse
+ *@s - string who will reverse
+ *Return : Void
+ */
+void _print_rev_recursion(char *s)
+
+/**
  * main - check the code for Holberton School students.
  *
  * Return: Always 0.

@@ -6,35 +6,18 @@
  *Return: Void
  */
 
-void _puts_recurion(char *s){
-
-int i = 0;
-
-if (*(s + i) == '\0')
-	_putchar(\n);
+void _puts_recursion(char *s){
 
 
+if ((*s) == '\0')
+	_putchar('\n');
 
+else{
+
+	_putchar(*s);
+	_puts_recursion(s + 1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /**
  * main - check the code for Holberton School students.

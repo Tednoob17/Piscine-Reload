@@ -36,8 +36,7 @@ int i = 0, n = 0, first, end, verif;
 
                 i++;
         }
-        _putchar(first);
-        _putchar(end);
+
                 if (first != end)
                         return(0);
                 else{
@@ -51,5 +50,6 @@ int i = 0, n = 0, first, end, verif;
 			return(1);
 		else
 			return(0);
-}
+            }
+	
 }

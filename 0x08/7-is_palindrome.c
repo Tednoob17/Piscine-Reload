@@ -21,7 +21,7 @@ int main(void)
     return (0);
 }
 int is_palindrome(char *s){
-	return(check_it(*s));
+	return(check_it(s));
 }
 
 int check_it(char *s){
@@ -51,4 +51,5 @@ int i = 0, n = 0, first, end, verif;
 			return(1);
 		else
 			return(0);
+}
 }

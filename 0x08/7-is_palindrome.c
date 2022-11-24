@@ -21,18 +21,34 @@ int main(void)
     return (0);
 }
 int is_palindrome(char *s){
-	int i = 0, first,end;
-
-	while (*(s + i) != '\0'){
-		if ( i == 0)
-			first = (s);
-		i++;
-	}
-		end = *(s + i);
-	_putchar(first);
-	_putchar(end);
-
-	return(i);
-	
+	return(check_it(*s));
 }
-/*int check_it(char *s){} */
+
+int check_it(char *s){
+
+int i = 0, n = 0, first, end, verif;
+
+        while (*(s + i) != '\0'){
+                if ( i == 0)
+                        first = *(s);
+                else
+                        end = *(s + i);
+
+                i++;
+        }
+        _putchar(first);
+        _putchar(end);
+                if (first != end)
+                        return(0);
+                else{
+		while( n < (i / 2)){
+			first = *(s + n);
+	       		  end = *(s + i - n);
+			  if (first == end)
+				verif++;
+                }
+		if (verif == (i / 2))
+			return(1);
+		else
+			return(0);
+}

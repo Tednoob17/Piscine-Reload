@@ -24,9 +24,14 @@ int is_palindrome(char *s){
 	int i = 0;
 
 	while (*(s + i) != '\0'){
+		if ( i == 0)
+			first = (s);
 		i++;
 	}
-	
+		end = *(s + i);
+	_putchar(fisrt);
+	_putchar(end);
+
 	return(i);
 	
 }

@@ -21,7 +21,7 @@ int main(void)
     return (0);
 }
 int is_palindrome(char *s){
-	int i = 0;
+	int i = 0, first,end;
 
 	while (*(s + i) != '\0'){
 		if ( i == 0)

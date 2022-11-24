@@ -22,9 +22,15 @@ int verif (int n, int i)
                if (i * i == n){
                     return(i);
                 }
-	       else
+	       else{
+	       	if (i < (17 / 2)){
+	       
 		    return(verif(n, i + 1));
-}
+	       }
+		else
+			return(-1);	
+		}
+	}
 }
 /**
  * main - check the code for Holberton School students.
@@ -41,8 +47,8 @@ int main(void)
     printf("%d\n", r);
     r = _sqrt_recursion(16);
     printf("%d\n", r);
-    /*r = _sqrt_recursion(17);
-    printf("%d\n", r);*/
+    r = _sqrt_recursion(17);
+    printf("%d\n", r);
     r = _sqrt_recursion(25);
     printf("%d\n", r);
     r = _sqrt_recursion(-1);

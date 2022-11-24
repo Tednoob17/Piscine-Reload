@@ -20,8 +20,10 @@ int verif (int n, int i)
                 return (1);
 	else{
                if (i * i == n){
-                    return(verif(n, i + 1));
+                    return(i);
                 }
+	       else
+		    return(verif(n, i + 1));
 }
 }
 /**

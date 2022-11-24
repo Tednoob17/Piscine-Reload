@@ -29,7 +29,7 @@ int is_palindrome(char *s){
 		i++;
 	}
 		end = *(s + i);
-	_putchar(fisrt);
+	_putchar(first);
 	_putchar(end);
 
 	return(i);

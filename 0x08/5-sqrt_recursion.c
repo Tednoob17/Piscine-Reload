@@ -23,7 +23,7 @@ int verif (int n, int i)
                     return(i);
                 }
 	       else{
-	       	if (i < (17 / 2)){
+	       	if (i < (n / 2)){
 	       
 		    return(verif(n, i + 1));
 	       }

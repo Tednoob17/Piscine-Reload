@@ -14,6 +14,16 @@ int is_prime_number(int n){
 
 
 }
+int verif(int n, int i){
+
+	if ( n <= 0 )
+		return(1);
+	else{
+		if ()
+	
+	}
+
+}
 
 /**
  * main - check the code for Holberton School students.

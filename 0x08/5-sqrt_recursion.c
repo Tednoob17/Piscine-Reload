@@ -7,23 +7,23 @@
  *Return : square of number n
  */
 int _sqrt_recursion(int n){
-	int i = 0;
-	int res = 0;
+	return(verif(n, 2));
+}
 
+int verif (int n, int i)
+{
 	if (n < 0)
-		return(-1);
-	else if (n == 0)
-		return(0);
-	else if (n == 1)
-		return (1);
+                return(-1);
+        else if (n == 0)
+                return(0);
+        else if (n == 1)
+                return (1);
 	else{
-		for (i = 0; i < n ;i++){
-			if (i * i == n){
-				return(i);
-			}
-		}
+               if (i * i == n){
+                    return(verif(n, i + 1));
+                }
 
-	}
+
 }
 /**
  * main - check the code for Holberton School students.

@@ -22,8 +22,7 @@ int verif (int n, int i)
                if (i * i == n){
                     return(verif(n, i + 1));
                 }
-
-
+}
 }
 /**
  * main - check the code for Holberton School students.

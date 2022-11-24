@@ -28,16 +28,16 @@ int check_it(char *s){
 	int j = 0, i = 0, n = 0, first = 0,end = 0, v, m, k;
 	/*char *first = "", end = "";*/
 	if (!(*s)){
-		return(1);
+		return(0);
 	}
 
-	while (*(s + i)!= '\0'){
+	while (*(s + i) != '\0'){
 		first = *(s + i);
  		n++;
  		i++;
 		}
 		if (i % 2 != 0)
-			return(1);
+			return(0);
 
 		j = i;
 		end = *(s + j);

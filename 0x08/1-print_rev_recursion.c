@@ -2,17 +2,19 @@
 
 /**
  *_print_rev_recursion - print  string a reverse
- *@s - string who will reverse
+ *@s: string who will reverse
  *Return : Void
  */
-void _print_rev_recursion(char *s){
 
+void _print_rev_recursion(char *s)
+{
 	if (*s != '\0')
 	{
 		_print_rev_recursion(s + 1);
 		_putchar(*s);
 	}
 }
+
 /**
  * main - check the code for Holberton School students.
  *
@@ -20,6 +22,6 @@ void _print_rev_recursion(char *s){
  */
 int main(void)
 {
-    _print_rev_recursion("\nColton Walker");
-    return (0);
-}                                                    
+	_print_rev_recursion("\nColton Walker");
+	return (0);
+}

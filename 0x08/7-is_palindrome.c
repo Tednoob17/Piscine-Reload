@@ -51,5 +51,4 @@ int i = 0, n = 0, first, end, verif;
 		else
 			return(0);
             }
-	
 }

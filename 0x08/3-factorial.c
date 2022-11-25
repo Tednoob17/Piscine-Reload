@@ -2,21 +2,21 @@
 #include <stdio.h>
 
 /**
- * fatorial - print number factorial
- *@n : number that we going print factorial
+ *factorial - print number n factorial
+ *@n: number that we going print factorial
  *Return: Number factorial
  */
-int factorial (int n){
+int factorial(int n)
+{
+	int i = 0;
+	int fact = 0;
 
-int i = 0;
-int fact = 0;
-
-if (n < 0)
+	if (n < 0)
 		return (-1);
-else if (n == 0)
-	return (1);
-else
-	return(n * factorial( n - 1));
+	else if (n == 0)
+		return (1);
+	else
+		return (n * factorial(n - 1));
 }
 /**
  * main - check the code for Holberton School students.
@@ -25,15 +25,15 @@ else
  */
 int main(void)
 {
-    int r;
+	int r;
 
-    r = factorial(1);
-    printf("%d\n", r);
-    r = factorial(5);
-    printf("%d\n", r);
-    r = factorial(10);
-    printf("%d\n", r);
-    r = factorial(-1024);
-    printf("%d\n", r);
-    return (0);
+	r = factorial(1);
+	printf("%d\n", r);
+	r = factorial(5);
+	printf("%d\n", r);
+	r = factorial(10);
+	printf("%d\n", r);
+	r = factorial(-1024);
+	printf("%d\n", r);
+	return (0);
 }

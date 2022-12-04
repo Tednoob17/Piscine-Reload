@@ -6,11 +6,13 @@
 *@h: list elements
 *Return: number of the nodes or nil (0)
 */
-size_t print_list(const list_t *h){
+size_t print_list(const list_t *h)
+{
 	unsigned int ko = 0;
-	if(h)
+
+	if (h)
 	{
-		while(h)
+		while (h)
 		{
 			if (h->str == NULL)
 			{
@@ -19,12 +21,12 @@ size_t print_list(const list_t *h){
 			}
 			else
 			{
-				printf("[%d] %s\n",h->len,h->str);
+				printf("[%d] %s\n", h->len, h->str);
 				h = h->next;
 				ko++;
 			}
 		}
-			
+
 	}
-	return(ko);
+	return (ko);
 }

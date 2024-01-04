@@ -38,4 +38,25 @@ $test -h /us/bin/ls ;echo $? #-h option verify if ls is a symbolic link file
 1   #answer of previous command so `ls` is not a symbolic link file
 ```
 
+	* 2nd synthax: `[..]` 
+
+```bash
+[ -h /usr/bin/ls ];echo $? #-h option verify if ls is a symbolic link file
+1 #answer of previous command so `ls` is not a symbolic link file
+```
+
+	* 3rd synthax: `[[..]]`
+
+
+
+
+
+
+
+
+
+
+
+
+
 

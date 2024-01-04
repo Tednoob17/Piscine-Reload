@@ -15,9 +15,11 @@ heredoc> #!/bin/bash
 heredoc> echo "Hello, World!"
 heredoc> EOF
 ```
-
-
-
+## How execute my bash script 
+- We have Two invocations modality
+	- We can just her name if he contains the *shebang* (#!/bin/bash)
+	- get the script name i argument to command `bash` (bash /tmp/test)
+		this option work also if the file don't have a permissions to execute tthe file.
 
 
 

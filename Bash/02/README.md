@@ -22,11 +22,17 @@ $ chmod ugo+x /usr/local/bin/sayhelloworld.sh
 ```
 Now we can test for see if we can execute this script without be in a `/usr/local/bin/` path
 
+```bash
+$ sayhelloworld.sh
+Hello world!
+```
+ and it work
 
+- Now if the directory of your script is not listed in ${PATH} you can move into a directory of you sript to execute it .Or use `export`
 
-
-
-
+```bash
+export PATH=${PATH}:/tmp   #here with assume that /tmp is the directory of your new script
+```
 
 
 

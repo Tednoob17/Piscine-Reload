@@ -27,7 +27,15 @@ $ echo $?
 
 
 
-### What is synthax 
+### What is synthax used for realise the tests
 
+-  We have 4 differents synthaxs
+	* 1st synthax : `test` command 
+```bash
+$ which ls
+/usr/bin/ls
+$test -h /us/bin/ls ;echo $? #-h option verify if ls is a symbolic link file
+1   #answer of previous command so `ls` is not a symbolic link file
+```
 
 

@@ -20,4 +20,14 @@ bash: printf: lllllllllllllllllllllllllll: invalid number
 $ echo $?
 1     #the of previous command (success/fail)
 ```
+### What is test and how to use them
+	- One test is a opration who evaluate the state of an ressources by compare it with reference state
+	- The answer test is in `$?` variable
+	- We have differents test category in function of testing ressources
+
+
+
+### What is synthax 
+
+
 

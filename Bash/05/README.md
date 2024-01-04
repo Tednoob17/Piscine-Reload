@@ -45,6 +45,21 @@ $ test -d /usr ; echo $?
 	- option: `-h` or -L
 
 ```bash
-$ 
+$ ln -s Inverted noinverted # create a symbolic link with Inverted file (inverted file was already exist)
+$ test -h noinverted ;echo $?
+0
+```
 
-``` 
+### How to test if a file is a named pipe ?
+	- A named pipe is one stack
+	- option: `-p`
+
+```bash
+$ mkfifo /tmp/mypipe  # make named pipes (FIFO's) with a given name
+$ test -p /tmp/mypipe ;echo $?
+0
+```
+
+### 
+
+ 

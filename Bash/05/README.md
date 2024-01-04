@@ -108,4 +108,13 @@ $ test /tmp/old -nt /tmp/old;echo $?
 ```
 
 
+### How to test if one file is more old than others ?
+
+	-option: `-ot` |file1 -ot file2
+```bash
+$ test /tmp/old -nt /tmp/old;echo $?
+0
+```
+
+
 

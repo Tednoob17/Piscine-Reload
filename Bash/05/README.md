@@ -85,8 +85,13 @@ $ test -r /usr/bin/firefox ;echo $?
 0
 ``` 
 
-### 
+### How to test if the current user can write in a file ?
 
+	- option: `-w`
+```bash
+$ test -w /usr/bin/firefox ;echo $?
+1
+```
 
 
 

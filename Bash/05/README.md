@@ -70,4 +70,18 @@ $ test -S /proc/${BASHPID}/fd/63;echo $?
 ```
 ### How to test if current user can execute a file ?
 
-	- oprion: `
+	- option: `-x`
+
+```bash
+$ test -x /usr/bin/firefox;echo $?
+0
+```
+
+### 
+
+
+
+
+
+
+

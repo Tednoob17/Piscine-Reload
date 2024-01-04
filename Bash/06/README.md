@@ -44,7 +44,7 @@
 
 ### How to test if a number is less than other
 
-        - option: `lt`
+	- option: `lt`
 
 ```bash
 [ 5 -ne 2 ];echo $?

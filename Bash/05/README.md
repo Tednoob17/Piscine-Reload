@@ -60,6 +60,14 @@ $ test -p /tmp/mypipe ;echo $?
 0
 ```
 
-### 
+### How to test if a file is a socket
 
- 
+	- option: -S
+```bash
+$ exec 63<>/dev/tcp/google.com/443
+$ test -S /proc/${BASHPID}/fd/63;echo $?
+0
+```
+### How to test if current user can execute a file ?
+
+	- oprion: `

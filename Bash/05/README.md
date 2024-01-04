@@ -77,8 +77,15 @@ $ test -x /usr/bin/firefox;echo $?
 0
 ```
 
-### 
+### How to test if the current user can read a file ?
 
+	- option: `-r`
+```bash
+$ test -r /usr/bin/firefox ;echo $?
+0
+``` 
+
+### 
 
 
 

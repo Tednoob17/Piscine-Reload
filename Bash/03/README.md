@@ -8,3 +8,34 @@
 
 ## What write in my first bash script 
 
+Ex : 
+```bash
+$ cat > /tmp/test <<EOF
+heredoc> #!/bin/bash
+heredoc> echo "Hello, World!"
+heredoc> EOF
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

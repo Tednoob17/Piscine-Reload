@@ -62,10 +62,10 @@
 ```
 ### How to test if a number is less than other
 
-	- option: `lt` | `! ge` 
+	- option: `-lt` | `! -ge` 
 
 ```bash
-[ 5 -ne 2 ];echo $?
+[ 5 -lt 2 ];echo $?
 1
 ```
 
@@ -73,5 +73,18 @@
 [ ! 5 -ge 2 ];echo $?
 1
 ```
+### How to test if a number is less oe equal than other
+
+        - option: `-le` | `! -gt`
+
+```bash
+[ 5 -le 2 ];echo $?
+1
+```
+```bash
+[ ! 2 -gt 3 ];echo $?
+0
+```
+ 
 
 

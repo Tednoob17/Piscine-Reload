@@ -94,6 +94,18 @@ $ test -w /usr/bin/firefox ;echo $?
 ```
 
 
+### How to test if one file is more recent than others ?
+
+	- Here we are used a modification date
+	- option: `-nt` | file1 -nt file2
+
+
+```bash
+$ touch /tmp/old
+$ touch /tmp/new
+$ test /tmp/old -nt /tmp/old;echo $?
+1
+```
 
 
 

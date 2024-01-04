@@ -8,7 +8,7 @@
 - Where i can placed my Bash scripts for execute them ?
 	- Path to your bash script statement the way to call them.
 	- On linux with have a directory make specially for executables. `echo ${PATH}`
-
+	- Any path is separated by `:` 
 **Ex:**
 
 ```bash
@@ -16,5 +16,20 @@ $ echo ${PATH}
 
 /home/j3kyll/Downloads/yes/bin:/home/j3kyll/.local/bin:/home/j3kyll/.cargo/bin:/home/j3kyll/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
 
-$ 
+$ nano /usr/local/bin/sayhelloworld.sh
+
+$ chmod ugo+x /usr/local/bin/sayhelloworld.sh 
 ```
+Now we can test for see if we can execute this script without be in a `/usr/local/bin/` path
+
+
+
+
+
+
+
+
+
+
+
+

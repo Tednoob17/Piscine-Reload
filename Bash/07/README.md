@@ -33,7 +33,14 @@ $ [ -z $a ]; echo $?
 
 	- option: -n
 
-``
+```bash
+a="toto"
+$ [ -n $a ];echo $?
+0
+
+$ [ -z $a ];echo $?
+1
+```
 
 
 

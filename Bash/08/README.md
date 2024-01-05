@@ -46,14 +46,17 @@ $ bash ./sample.sh;echo $?
 ```
 
 ```bash
-bash ./sample2.sh && echo "number" || echo "string"
+$ bash ./sample2.sh && echo "number" || echo "string"
 Enter a number
 12
 number
 ```
 
 ```bash
-
+$ bash ./sample2.sh && echo "number" || echo "string"
+Enter a number
+gg
+string
 ```
 
 

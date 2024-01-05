@@ -45,11 +45,19 @@ $ [ ! -z $a ];echo $?
 0
 ```
 
+### How to compare the lexical position for two strings ?
 
+	- option: `>` and `<` 
 
+```bash
+$ [ "aa" \> ""ab ];echo $?
+1
+```
 
-
-
+```bash
+$ [ "aa" \< "ab" ];echo $?
+0
+```
 
 
 

@@ -45,8 +45,16 @@ $ bash ./sample.sh;echo $?
 0
 ```
 
+```bash
+bash ./sample2.sh && echo "number" || echo "string"
+Enter a number
+12
+number
+```
 
+```bash
 
+```
 
 
 

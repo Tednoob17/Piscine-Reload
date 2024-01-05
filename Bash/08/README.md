@@ -34,7 +34,28 @@ resolv.conf is not executable
 ```
 
 
+### How to execute a code block in functions of variable value ?
 
+	- option: `case`
+
+**Ex:** See `./sample.sh`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 

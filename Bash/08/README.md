@@ -38,9 +38,12 @@ resolv.conf is not executable
 
 	- option: `case`
 
-**Ex:** See `./sample.sh`
+**Ex:** See `./sample.sh` and `./sample2.sh`
 
-
+```bash
+$ bash ./sample.sh;echo $?
+0
+```
 
 
 

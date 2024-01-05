@@ -22,7 +22,7 @@ $ a="toto"; b="toto"; [ $a = $b ];echo $?
 
 ### How to test if string is empty ?
 
-	- option: -z
+	- option: `-z`
 ```bash
 $a=""
 $ [ -z $a ]; echo $?
@@ -31,7 +31,7 @@ $ [ -z $a ]; echo $?
 
 ### How to test if string is not empty ?
 
-	- option: -n
+	- option: `-n` | `! -z` 
 
 ```bash
 a="toto"
@@ -40,6 +40,9 @@ $ [ -n $a ];echo $?
 
 $ [ -z $a ];echo $?
 1
+
+$ [ ! -z $a ];echo $?         
+0
 ```
 
 

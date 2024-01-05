@@ -15,6 +15,8 @@ When you use a `&&` the second command run only if the first is success
 
 The `||` execute second command only if the first fail
 
+YOu can use them in same time 
+
 ```bash
 test -x /usr/bin/firefox && echo "firefox is executable!" # if can work only if `$?` send 0 .
 firefox is executable!
@@ -25,4 +27,28 @@ firefox is executable!
 $ test -x /etc/resolv.conf || echo "resolv.conf is not executable"
 resolv.conf is not executable
 ```
+
+```bash
+test -x /etc/resolv.conf && echo "resolv.conf is  executable" || echo  "resolv.conf is not executable"
+resolv.conf is not executable
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

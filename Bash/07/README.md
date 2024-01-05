@@ -60,8 +60,20 @@ $ [ "aa" \< "ab" ];echo $?
 ```
 
 
+### How to test string comformity with regular expression ?
 
+	- option: `[[  ]]` and in synthax we can use `=~`
 
+```bash
+$ a="t3d"
+$ [[ a=~"3d" ]];echo $? # if `a` contain `3d`
+0
+```
+```bash
+$ [[ a=~^"t" ]];echo $? # if `a` begin by `t`
+0
+
+```
 
 
 

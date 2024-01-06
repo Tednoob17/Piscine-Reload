@@ -4,6 +4,13 @@
 
 	- we can use `while`
 
-**Ex** : See `./iterator.sh`  
+**Ex** : See `./iterator.sh`  or `./Great.sh` `./read_line.sh`
+
+
+### How to execute instructions blocks while instruction is false ?
+
+	- option: `until` 
+
+**Ex** : See `./until.sh`
 
 
